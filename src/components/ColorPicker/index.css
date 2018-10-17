@@ -1,0 +1,50 @@
+.ColorPicker {
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+  width: 300px;
+}
+
+.ColorPicker > .ColorContainer {
+  flex: 2;
+}
+.ColorPicker > .ColorContainer > .Color {}
+
+.ColorPicker > .Sliders {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.ColorPicker > .Sliders > .Tone {
+  flex: 1;
+  height: 22px;
+  position: relative;
+  border-radius: 50px;
+}
+.ColorPicker > .Sliders > .Tone > .Box {
+  flex: 1;
+  height: inherit;
+  border-radius: 50px;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+}
+.ColorPicker > .Sliders > .Transparency {
+  height: 22px;
+  flex: 1;
+  position: relative;
+  border-radius: 50px;
+}
+.ColorPicker > .Sliders > .Transparency > .Background {
+  height: inherit;
+  border-radius: 50px;
+  position: absolute; top: 0px; right: 0px; bottom: 0px; left: 0px; background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAMUlEQVQ4T2NkYGAQYcAP3uCTZhw1gGGYhAGBZIA/nYDCgBDAm9BGDWAAJyRCgLaBCAAgXwixzAS0pgAAAABJRU5ErkJggg==") left center;
+}
+.ColorPicker > .Sliders > .Transparency > .Box {
+  flex: 1;
+  height: inherit;
+  position: absolute; top: 0px; right: 0px; bottom: 0px; left: 0px; background: linear-gradient(to right, rgba(19, 23, 14, 0) 0%, rgb(19, 23, 14) 100%);
+  border-radius: 50px;
+}

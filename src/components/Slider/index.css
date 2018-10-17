@@ -1,0 +1,14 @@
+.Slider {
+  width: inherit;
+  height: 20px;
+  border: 1px solid #CCC;
+  position: relative;
+  border-radius: 2000px;
+}
+.Slider > .Holder {
+  position: absolute;
+  left: 0;
+  top: 0px;
+  border-radius: 50px;
+  background-color: #CCC;
+}
